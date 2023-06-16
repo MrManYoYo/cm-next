@@ -11,12 +11,13 @@ export const metadata = {
 
 const navLinks = [
   { name: 'Dashboard', href: '/dashboard' },
+  { name: 'Manage', href: '/manage' },
   { name: 'Monitor', href: '/monitor' },
   { name: 'Account', href: '/setting/account' },
   { name: 'Role', href: '/setting/role' },
 ]
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
